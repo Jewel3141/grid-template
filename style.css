@@ -1,0 +1,23 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: tomato;
+    border: 2px solid green;
+    position: relative;
+    margin: 100px auto;
+    text-align: center;
+    font-size: 30px;
+    color: aqua;
+    box-shadow: 5px 5px 5px rgb(116, 122, 115);
+    border-radius: 10px;
+}
+
+.box img {
+    height: 200px;
+    width: 150px;
+    margin: 5px 120px;
+    position: relative;
+    border-radius: 15px;
+    border: 5px solid blue;
+}
+
