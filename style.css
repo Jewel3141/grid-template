@@ -8,7 +8,8 @@
     text-align: center;
     font-size: 30px;
     color: aqua;
-    box-shadow: 5px 5px 5px rgb(116, 122, 115);
+    box-shadow: 5px 5px 5px rgb(116, 122, 115),
+    -5px -5px 5px rgb(116, 122, 115);
     border-radius: 10px;
 }
   
@@ -20,5 +21,16 @@
     position: relative;
     border-radius: 15px;
     border: 5px solid blue;
+}
+
+.social{
+    height: 80px;
+    width: 80px;
+    margin: 20px auto;
+    background-image: url(images/social.png);
+    background-repeat: no-repeat;
+    background-position: 0 -85px;
+    border-radius: 50%;
+  
 }
 
