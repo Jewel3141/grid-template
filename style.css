@@ -4,7 +4,7 @@
     background-color: tomato;
     border: 2px solid green;
     position: relative;
-    margin: 100px auto;
+    margin: 50px auto;
     text-align: center;
     font-size: 30px;
     color: aqua;
@@ -17,7 +17,7 @@
 .box img {
     height: 200px;
     width: 150px;
-    margin: 5px 120px;
+    margin: 1px auto;
     position: relative;
     border-radius: 15px;
     border: 5px solid blue;
@@ -26,11 +26,47 @@
 .social{
     height: 80px;
     width: 80px;
-    margin: 20px auto;
+    margin: 50px auto;
     background-image: url(images/social.png);
     background-repeat: no-repeat;
     background-position: 0 -85px;
     border-radius: 50%;
   
 }
+
+.social:hover{
+    height: 80px;
+    width: 80px;
+    margin: 50px auto;
+    background-image: url(images/social.png);
+    background-repeat: no-repeat;
+    background-position: 0 -169px;
+    border-radius: 50%;
+}
+
+:root {
+    overflow: hidden; /* hides any part of the sun below the horizon */
+    background-color: lightblue;
+    display: flex;
+    justify-content: center; /* centers the sun in the background */
+  }
+  
+  .sun {
+    background-color: yellow;
+    border-radius: 50%; /* creates a circular background */
+    height: 100vh; /* makes the sun the size of the viewport */
+    aspect-ratio: 1 / 1;
+    animation: 1s linear 0s infinite alternate sun-rise;
+  }
+  
+  @keyframes sun-rise {
+    from {
+      /* pushes the sun down past the viewport */
+      transform: translateY(110vh);
+    }
+    to {
+      /* returns the sun to its default position */
+      transform: translateY(0);
+    }
+  }
 
